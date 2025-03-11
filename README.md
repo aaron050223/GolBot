@@ -251,3 +251,29 @@ Este comando devuelve una lista de los jugadores con más goles en la liga selec
 Este bot utiliza la API de Football-Data.org, que tiene un límite de peticiones. Asegúrate de no hacer demasiadas peticiones en un corto período de tiempo para evitar bloqueos. Además, la API puede no estar disponible temporalmente, en cuyo caso el bot no podrá obtener los datos.
 
 ⚠️ **¡Importante!** El bot solo funciona **ejecutandose el archivo de python**, si no se ejecuta el bot **no** funciona.
+
+# Ejemplos
+
+### /start
+
+Al usar `/start` se mostrará el siguiente mensaje:
+
+![/start](imagenes_de_ejemplos/start.png)
+
+### /partidos
+
+Al usar `/partidos`, seguidos de la liga deseada y de `hoy` o `jornada` (en este caso es `hoy`)se mostrará el siguiente mensaje (teniendo en cuenta que si el partido ya ha finalizado pondra el resultado y si esta en juego se mostrara `🟢 En juego`):
+
+![/partidos](imagenes_de_ejemplos/partidosJornada.png)
+
+### /maximos
+
+Al usar `/maximos` se mostrará el siguiente mensaje con los maximos goleadores de la liga selecionada:
+
+![/goleadores](imagenes_de_ejemplos/goleadores.png)
+
+### /clasificacion
+
+Al usar `/clasificacion` se mostrará el siguiente mensaje con la clasificación de la liga selecionada:
+
+![/clasificaion](imagenes_de_ejemplos/clasificacion.png)
