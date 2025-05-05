@@ -190,3 +190,28 @@ Al usar `/maximos` se mostrará el siguiente mensaje con los maximos goleadores 
 Al usar `/clasificacion` se mostrará el siguiente mensaje con la clasificación de la liga selecionada:
 
 ![/clasificaion](imagenes_de_ejemplos/clasificacion.png)
+
+## 🧾 ¿Cómo obtener tus propios tokens?
+
+# 🤖 Token de Telegram
+- Abre Telegram y busca *@BotFather*.
+- Inicia una conversación y usa el comando:
+```
+/newbot
+```
+
+- Elige un nombre para tu bot (puede ser cualquiera).
+- Luego elige un nombre de usuario único para el bot (debe terminar en bot, por ejemplo: GolazoBot).
+- BotFather te dará un token de acceso como este:
+```
+123456789:ABCdefGhIjKlmNoPQRstuVWxyZ
+```
+- Copia ese token y pégalo en tu código como se indica arriba.
+> ⚠️ ¡Guarda tu token en privado! Cualquiera con acceso a él puede controlar tu bot.
+
+## ⚽ Token de football-data.org
+- Ve a https://www.football-data.org/.
+- Haz clic en "Get your free API key" o en "Sign Up" en la parte superior.
+- Regístrate con tu correo electrónico.
+- Una vez registrado, ve al Dashboard.
+- Allí verás tu X-Auth-Token, que necesitarás incluir en el código como API_KEY.
