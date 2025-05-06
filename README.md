@@ -191,9 +191,9 @@ Al usar `/clasificacion` se mostrará el siguiente mensaje con la clasificación
 
 ![/clasificaion](imagenes_de_ejemplos/clasificacion.png)
 
-## 🧾 ¿Cómo obtener tus propios tokens?
+# 🧾 ¿Cómo obtener tus propios tokens?
 
-# 🤖 Token de Telegram
+## 🤖 Token de Telegram
 - Abre Telegram y busca *@BotFather*.
 - Inicia una conversación y usa el comando:
 ```
