@@ -1,217 +1,219 @@
 # GolBot
 
-## **1. ¿Qué necesitas antes de empezar?**
+## **1. What do you need?**
 
-Antes de ejecutar el bot, asegúrate de cumplir con los siguientes requisitos:
+Before running the bot, make sure you meet the following requirements:
 
-### 1.1. **¿Tienes Python instalado?**
+### 1.1. **Do you have Python installed?**
 
 Python es necesario para ejecutar este programa. Para verificar si lo tienes:
 
-1. Abre la terminal:
-    - En Windows: Presiona `Win + R`, escribe `cmd` y presiona Enter.
-    - En macOS/Linux: Busca "Terminal" en tu sistema y ábrela.
-2. Escribe el siguiente comando y presiona Enter:
+1. Open the terminal:
+    - Windows: Press `Win + R`, write `cmd` and press Enter.
+    - macOS/Linux: Search "Terminal" in your sistem and open it.
+2. Type the following command and press Enter:
     
     ```
     python --version
     ```
     
-    o si no funciona:
+   If it does not work:
     
     ```
     python3 --version
     ```
     
-    - Si ves algo como `Python 3.x.x`, ya está instalado.
-    - Si no aparece, descárgalo desde [python.org](https://www.python.org/downloads/) e instálalo. **Importante:** Marca la opción **Add Python to PATH** durante la instalación.
+    - If you see something like `Python 3.x.x`, it is already installed.
+    - If it does not appear, download it from [python.org](https://www.python.org/downloads/) and install it. **Important:** Check the **Add Python to PATH** option during the installation.
 
-### 1.2. **¿Tienes el archivo del bot?**
+### 1.2. **Do you have the bot file?**
 
-El archivo del bot se llama `GolBot.py`. Asegúrate de tenerlo en tu ordenador y saber en qué carpeta está ubicado.
+The bot file is called `GolBot.py`. Make sure you have it on your computer and know in which folder it is located.
 
 ---
 
-## **2. Cómo ejecutar el bot**
+## **2. How to run the bot?**
 
-### 2.1. **Abre la terminal**
+### 2.1. **Open the terminal**
 
-- En Windows: Abre `cmd` o PowerShell (`Win + R`, escribe `cmd` y presiona Enter).
-- En macOS/Linux: Abre la aplicación "Terminal".
+- Windows: Open `cmd` or PowerShell (`Win + R`, type `cmd` and press Enter)..
+- macOS/Linux: Open the “Terminal” application.
 
-### 2.2. **Muévete a la carpeta del archivo**
+### 2.2. **Move to the file folder**
 
-Para ejecutar el bot, primero necesitas estar en la carpeta donde guardaste `GolBot.py`. Usa el comando `cd` para moverte:
+To run the bot, you first need to be in the folder where you saved `GolBot.py`. Use the `cd` command to move around:
 
-- Si guardaste el archivo en tu carpeta de Documentos:
-    - En macOS/Linux:
+- If you saved the file to your Documents folder:
+    - In macOS/Linux:
         
         ```
-        cd ~/Documentos
+        cd ~/Documents
         ```
         
-    - En Windows:
+    - In Windows:
         
         ```
-        cd C:\Usuarios\TuUsuario\Documentos
+        cd C:\User\YourUser\Documents
         ```
         
 
-Para asegurarte de que el archivo está en esa carpeta, escribe:
+To make sure the file is in that folder, type:
 
 ```
-ls  # En macOS/Linux
-dir # En Windows
+ls  # macOS/Linux
+dir # Windows
 ```
 
-Deberías ver `GolBot.py` en la lista de archivos.
+You should see `GolBot.py` in the list of files.
 
-### 2.3. **Ejecuta el bot**
+### 2.3. **Execute the bot**
 
-El bot se ejecuta con Python. Para iniciar el bot, usa uno de los siguientes comandos, dependiendo de cómo esté configurado tu sistema:
+The bot is run with Python. To start the bot, use one of the following commands, depending on how your system is configured:
 
-- Si tu sistema usa `python`:
+- If your sistem uses `python`:
     
     ```
     python GolBot.py
     ```
     
-- Si tu sistema usa `python3`:
+- If your sistem uses `python3`:
     
     ```
     python3 GolBot.py
     ```
     
 
-El bot comenzará a funcionar y podrás interactuar con él a través de Telegram.
+The bot will start working and you will be able to interact with it through Telegram.
 
 ---
 
-## **3. Cómo usar el bot**
+## **3. How to use the bot**
 
-### 3.1. **Comando `/start`**
+### 3.1. **Command `/start`**
 
-El comando `/start` da la bienvenida al usuario y muestra las opciones disponibles:
+The `/start` command welcomes the user and displays the available options:
 
-- Muestra las ligas disponibles para consultar.
+- It offers commands to view today's matches, the complete matchday, the standings and the top scorers. para consultar.
 - Ofrece comandos para ver los partidos de hoy, la jornada completa, la clasificación y los máximos goleadores.
 
-### 3.2. **Comando `/partidos`**
+### 3.2. **Command `/partidos`**
 
-El comando `/partidos` permite al usuario obtener información sobre los partidos de una liga en una fecha específica. Debes usar el comando de la siguiente manera:
+The `/partidos` command allows the user to obtain information about the matches of a league on a specific date. You must use the command as follows:
 
-- Partidos de hoy:
+- Matchs of today:
     
     ```
-    /partidos laliga hoy
+    /partidos <league> hoy
     ```
     
-- Partidos de la jornada:
+- Matchs of the matchday:
     
     ```
-    /partidos laliga jornada
+    /partidos <league> jornada
     ```
     
 
-Si no se especifica correctamente la liga o el modo (hoy/jornada), el bot te pedirá que lo hagas correctamente.
+If you do not specify the league or mode correctly (today/day), the bot will prompt you to do it correctly.
 
-### 3.3. **Comando `/clasificacion`**
+### 3.3. **Command `/clasificacion`**
 
-El comando `/clasificacion` permite consultar la clasificación actual de una liga. Debes usar el comando de la siguiente manera:
-
-```
-/clasificacion laliga
-```
-
-Este comando devuelve una lista con los equipos clasificados y sus puntos.
-
-### 3.4. **Comando `/maximos`**
-
-El comando `/maximos` muestra los máximos goleadores de una liga. Debes usar el comando de la siguiente manera:
+The `/clasificacion` command allows you to look up the current standings of a league. You must use the command as follows:
 
 ```
-/maximos laliga
+/clasificacion <league>
 ```
 
-Este comando devuelve una lista de los jugadores con más goles en la liga seleccionada.
+This command returns a list of ranked teams and their points.
 
-### 3.5. **Errores comunes**
+### 3.4. **Command `/maximos`**
 
-- Si se omite la liga o el parámetro (hoy/jornada) en los comandos, el bot te pedirá que los incluyas.
-- Si la liga no es válida, el bot informará que la liga seleccionada no existe.
-- Si el bot no puede obtener los datos de la API de Football-Data.org, te mostrará un mensaje de error.
+The `/maximos` command displays the top scorers of a league. You must use the command as follows:
+
+```
+/maximos <league>
+```
+
+This command returns a list of the players with the most goals in the selected league.
+
+### 3.5. **Common errors**
+
+- If the league or the parameter (hoy/jornada) is omitted in the commands, the bot will prompt you to include it.
+- If the league is not valid, the bot will report that the selected league does not exist.
+- If the bot cannot get the data from the Football-Data.org API, it will show you an error message.
 
 ---
 
-## **4. Explicación del código**
+## **4. Explanation of the code**
 
-### 4.1. **Módulos utilizados**
+### 4.1. **Modules used**
 
-- `requests`: Se usa para hacer peticiones HTTP a la API de Football-Data.org.
-- `telebot`: Biblioteca para interactuar con el API de Telegram y crear el bot.
-- `datetime` y `pytz`: Para manejar fechas y horas, ajustando la zona horaria a la de Madrid (Europe/Madrid).
+- `requests`: Used to make HTTP requests to the Football-Data.org API.
+- `telebot`: Library to interact with the Telegram API and create the bot.
+- datetime` and `pytz`: To handle dates and times, setting the time zone to Madrid (Europe/Madrid).
 
 ### 4.2. **Funciones principales**
 
-- **`start()`**: Envia un mensaje de bienvenida con las opciones del bot cuando se inicia.
-- **`obtener_partidos()`**: Obtiene los partidos de la liga especificada (hoy o de la jornada).
-- **`obtener_clasificacion()`**: Obtiene la clasificación de la liga seleccionada.
-- **`obtener_maximos()`**: Muestra los máximos goleadores de la liga seleccionada.
-- **`formatear_partido()`**: Da formato a la información de cada partido para presentarla de manera clara.
+- **`start()`**: Sends a welcome message with the bot options when it starts.
+- **`obtener_partidos()`**: Gets the matches of the specified league (today or matchday).
+- **`obtener_clasificacion()`**: Gets the rankings of the selected league.
+- **`obtener_maximos()`**: Shows the top scorers of the selected league.
+- **`formatear_partido()`**: Formats the information of each match to present it clearly.
 
-### 4.3. **Consideraciones de uso**
 
-Este bot utiliza la API de Football-Data.org, que tiene un límite de peticiones. Asegúrate de no hacer demasiadas peticiones en un corto período de tiempo para evitar bloqueos. Además, la API puede no estar disponible temporalmente, en cuyo caso el bot no podrá obtener los datos.
+### 4.3. **Usage considerations**
 
-⚠️ **¡Importante!** El bot solo funciona **ejecutandose el archivo de python**, si no se ejecuta el bot **no** funciona.
+This bot uses the Football-Data.org API, which has a request limit. Make sure not to make too many requests in a short period of time to avoid crashes. Also, the API may be temporarily unavailable, in which case the bot will not be able to get the data.
 
-# Ejemplos
+> ⚠️ **¡Important!** The bot only works **running the python file**, if you don't run the bot **doesn't** work.
+
+# Examples
 
 ### /start
 
-Al usar `/start` se mostrará el siguiente mensaje:
+When using `/start` the following message will be displayed:
 
 ![/start](imagenes_de_ejemplos/start.png)
 
 ### /partidos
 
-Al usar `/partidos`, seguidos de la liga deseada y de `hoy` o `jornada` (en este caso es `hoy`)se mostrará el siguiente mensaje (teniendo en cuenta que si el partido ya ha finalizado pondra el resultado y si esta en juego se mostrara `🟢 En juego`):
+When using `/partidos`, followed by the desired league and `hoy` (today) or `jornada` (matchday) the following message will be displayed (taking into account that if the match has already finished it will show the result and if it is in game it will show `🟢 En juego` (In game)):
+
 
 ![/partidos](imagenes_de_ejemplos/partidosJornada.png)
 
 ### /maximos
 
-Al usar `/maximos` se mostrará el siguiente mensaje con los maximos goleadores de la liga selecionada:
+When using `/maximos` the following message will be displayed with the top scorers of the selected league:
 
 ![/goleadores](imagenes_de_ejemplos/goleadores.png)
 
 ### /clasificacion
 
-Al usar `/clasificacion` se mostrará el siguiente mensaje con la clasificación de la liga selecionada:
+When using `/clasificacion` the following message will be displayed with the classification of the selected league:
 
 ![/clasificaion](imagenes_de_ejemplos/clasificacion.png)
 
-# 🧾 ¿Cómo obtener tus propios tokens?
+# 🧾 How to get your own tokens?
 
-## 🤖 Token de Telegram
-- Abre Telegram y busca *@BotFather*.
-- Inicia una conversación y usa el comando:
+## 🤖 Telegram token.
+- Open Telegram and search for *@BotFather*.
+- Start a conversation and use the command:
 ```
 /newbot
 ```
 
-- Elige un nombre para tu bot (puede ser cualquiera).
-- Luego elige un nombre de usuario único para el bot (debe terminar en bot, por ejemplo: GolazoBot).
-- BotFather te dará un token de acceso como este:
+- Choose a name for your bot (it can be anything).
+- Then choose a unique username for the bot (it must end in bot, for example: GolazoBot).
+- BotFather will give you an access token like this:
 ```
 123456789:ABCdefGhIjKlmNoPQRstuVWxyZ
 ```
-- Copia ese token y pégalo en tu código como se indica arriba.
-> ⚠️ ¡Guarda tu token en privado! Cualquiera con acceso a él puede controlar tu bot.
+- Copy that token and paste it into your code as above.
+> ⚠️ Keep your token private! Anyone with access to it can control your bot.
 
-## ⚽ Token de football-data.org
-- Ve a https://www.football-data.org/.
-- Haz clic en "Get your free API key" o en "Sign Up" en la parte superior.
-- Regístrate con tu correo electrónico.
-- Una vez registrado, ve al Dashboard.
-- Allí verás tu X-Auth-Token, que necesitarás incluir en el código como API_KEY.
+## ⚽ football-data.org token.
+- Go to https://www.football-data.org/.
+- Click on “Get your free API key” or “Sign Up” at the top.
+- Sign up with your email address.
+- Once registered, go to the Dashboard.
+- There you will see your X-Auth-Token, which you will need to include in the code as API_KEY.
