@@ -1,6 +1,9 @@
 <a href="https://github.com/aaron050223/GolBot/blob/main/CONTRIBUTING.md">
 <img src="https://img.shields.io/badge/CONTRIBUTING-8A2BE2">
 </a>
+<a href="https://github.com/aaron050223/GolBot/wiki">
+<img src="https://img.shields.io/badge/WIKI-blue">
+</a>
 
 # GolBot
 
