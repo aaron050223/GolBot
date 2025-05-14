@@ -1,3 +1,7 @@
+<a href="https://github.com/aaron050223/GolBot/blob/main/contributing.md">
+<img src="https://img.shields.io/badge/CONTRIBUTING-8A2BE2">
+</a>
+
 # GolBot
 
 ## **1. What do you need?**
