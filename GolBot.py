@@ -367,7 +367,7 @@ def obtener_maximos(codigo_competicion):
 
     data = response.json()
 
-    # 🔍 Depuración: Imprimimos la estructura de los datos
+    # Depuración: Imprimimos la estructura de los datos
     print("📊 JSON devuelto por la API:", data)
 
     goleadores = data.get('scorers', [])
